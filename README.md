@@ -55,16 +55,16 @@ bun dev
 - npm run dev
 - npm run build(Build for production)
 
-📁 Project Structure
+# 📁 Project Structure
 
-app/
-  ├─ page.jsx          # Home page
-  ├─ ielts/
-      ├─ page.jsx      # IELTS course page
-components/
-  ├─ NavBar.jsx        # Navigation with language selector
-public/
-styles/
+- app/
+-  ├─ page.jsx          # Home page
+- ├─ ielts/
+-      ├─ page.jsx      # IELTS course page
+- components/
+-  ├─ NavBar.jsx        # Navigation with language selector
+- public/
+- styles/
 
 
 
