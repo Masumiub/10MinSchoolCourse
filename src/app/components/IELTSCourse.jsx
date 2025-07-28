@@ -33,7 +33,7 @@ export default async function IELTSCourse() {
 
                 <div className='flex flex-col md:flex-row gap-10 items-center bg-linear-to-b from-blue-950 to-blue-800 px-9 pt-5 text-white rounded-2xl shadow-2xl'>
                     <div className='w-full md:w-2/3 '>
-                        <h1 className="text-5xl font-bold mb-4">{data.title}</h1>
+                        <h1 className="text-3xl mt-10 md:text-5xl md:mt-0 font-bold mb-4">{data.title}</h1>
 
                         <section
                             className="prose mt-4"
@@ -54,13 +54,13 @@ export default async function IELTSCourse() {
                             </section>
                         )}
 
-                        <button className="btn w-full mt-6 bg-blue-600 text-white rounded-full">
+                        <button className="btn w-full mt-6 bg-blue-600 text-white rounded-full hover:border-blue-600 hover:bg-white hover:text-blue-600">
                             {data.cta_text?.name ?? 'Enroll'} – ৳1000
                         </button>
                     </div>
                 </div>
 
-                <div className='flex flex-col md:flex-row gap-9 pr-9 pl-9'>
+                <div className='flex flex-col-reverse md:flex-row gap-9 pr-9 pl-9'>
                     <div className='w-full md:w-2/3'>
                         {data.sections?.map(section => {
                             if (section.type === 'instructors') {

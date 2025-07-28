@@ -5,10 +5,24 @@ import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import { IoLogIn } from "react-icons/io5";
 import { CgDarkMode } from "react-icons/cg";
+import { usePathname } from 'next/navigation'
+
 
 export default function NavBar() {
 
     const [theme, setTheme] = useState('light');
+    const pathname = usePathname()
+
+    const router = useRouter()
+    const [language, setLanguage] = useState('EN')
+
+    useEffect(() => {
+        if (pathname === '/ielts') {
+            setLanguage('BN')
+        } else {
+            setLanguage('EN')
+        }
+    }, [pathname])
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme') || 'light';
@@ -23,8 +37,7 @@ export default function NavBar() {
         localStorage.setItem('theme', newTheme);
     };
 
-    const router = useRouter()
-    const [language, setLanguage] = useState('EN')
+
 
     const handleChange = (e) => {
         const selectedLang = e.target.value
