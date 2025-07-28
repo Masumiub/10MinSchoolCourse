@@ -31,7 +31,7 @@ export default async function IELTSCourse() {
         <div>
             <main className="w-full md:w-10/12 mx-auto">
 
-                <div className='flex flex-col md:flex-row gap-10 items-center bg-linear-to-b from-blue-950 to-blue-800 px-9 py-5 text-white rounded-2xl shadow-2xl'>
+                <div className='flex flex-col md:flex-row gap-10 items-center bg-linear-to-b from-blue-950 to-blue-800 px-9 pt-5 text-white rounded-2xl shadow-2xl'>
                     <div className='w-full md:w-2/3 '>
                         <h1 className="text-5xl font-bold mb-4">{data.title}</h1>
 
@@ -41,7 +41,7 @@ export default async function IELTSCourse() {
                         />
                     </div>
 
-                    <div className='w-full md:w-1/3 bg-base-200 p-5 shadow-2xl rounded-2xl'>
+                    <div className='w-full md:w-1/3 bg-base-200 p-5 shadow-2xl rounded-t-2xl'>
                         {data.media?.find(m => m.resource_type === 'video') && (
                             <section className="mt-6">
                                 <iframe
@@ -54,13 +54,13 @@ export default async function IELTSCourse() {
                             </section>
                         )}
 
-                        <button className="btn w-full mt-6 bg-blue-600 text-white">
+                        <button className="btn w-full mt-6 bg-blue-600 text-white rounded-full">
                             {data.cta_text?.name ?? 'Enroll'} – ৳1000
                         </button>
                     </div>
                 </div>
 
-                <div className='flex flex-col md:flex-row gap-10'>
+                <div className='flex flex-col md:flex-row gap-9 pr-9 pl-9'>
                     <div className='w-full md:w-2/3'>
                         {data.sections?.map(section => {
                             if (section.type === 'instructors') {
@@ -169,8 +169,8 @@ export default async function IELTSCourse() {
                     </div>
 
                     <div className='w-full md:w-1/3'>
-                        <section className="mt-8 bg-base-200 p-5 shadow-2xl rounded-2xl">
-                            <h2 className="text-2xl font-semibold">What's included?</h2>
+                        <section className=" bg-base-200 p-5 shadow-2xl rounded-b-2xl">
+                            <h2 className="text-2xl font-semibold text-center">What's included?</h2>
                             <ul className=" mt-3">
                                 {data.checklist?.map(item => (
                                     <div className='flex gap-2 items-center mb-2' key={item.id}>
