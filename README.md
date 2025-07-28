@@ -49,7 +49,7 @@ bun dev
 
 
 # How to Run Locally:
-- git clone https://github.com/yourusername/ielts-course-app.git
+- git clone https://github.com/Masumiub/10MinSchoolCourse.git
 - cd ielts-course-app
 - npm install
 - npm run dev
