@@ -3,8 +3,7 @@
 A responsive and dynamic web application designed to showcase IELTS preparation courses. Built with Next.js 15 (App Router), Tailwind CSS, and integrated with 10 Minute School's public API, the project delivers a smooth user experience with client-side routing and optimized performance.
 
 
-Live Link: https://course-by-10min-school-f9czfkkbm-masumiubs-projects.vercel.app/
-
+Live Link: https://course-by-10min-school.vercel.app/
 
 ## 📄 Project Description
 
